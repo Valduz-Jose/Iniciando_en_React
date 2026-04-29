@@ -13,6 +13,6 @@ root.render(
   <React.StrictMode>
     {/* <HolaMundo titulo="Curso de React" duracion={12} /> */}
     {/* <App /> */}
-    <Contador valor={1} />
+    <Contador valor={0} />
   </React.StrictMode>,
 );

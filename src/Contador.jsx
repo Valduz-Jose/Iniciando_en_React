@@ -6,12 +6,25 @@ export const Contador = ({ valor }) => {
   const incrementar = () => {
     setContador(contador + 1);
   };
+
+  const decremento = () => {
+    setContador(contador - 1);
+  };
+
+  const reiniciar = () => {
+    setContador(valor);
+  };
+
   return (
     <>
       <h1>Contador</h1>
       <h3>{contador}</h3>
       <hr />
       <button onClick={incrementar}>Incementar</button>
+      <br />
+      <button onClick={decremento}>Decremento</button>
+      <br />
+      <button onClick={reiniciar}>Reiniciar</button>
     </>
   );
 };
